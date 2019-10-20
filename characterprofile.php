@@ -590,7 +590,7 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
 				<table>
 					<th colspan="2">Quests</th> 
 				<?php
-				$storage=array('Greenhorn Arena' => 42361, 'Scrapper Arena' => 42371, 'Warlord Arena' => 42381, 'Behemoth Quest' => 60058, 'Annihilator' => 49111, 'Demon Helmet Quest' => 60746, 'Pits Of Inferno' => 10544, 'The Inquisition' => 8560, 'Yalahar Quest' => 102504, 'Firewalker Boots Quest' => 102504, 'Demonic Svargrond Arena' => 585783, 'Arcane Amulet' => 42391);
+				$storage=array('Blue Legs Quest' => 5124, 'Greenhorn Arena' => 42361, 'Scrapper Arena' => 42371, 'Warlord Arena' => 42381, 'Behemoth Quest' => 60058, 'Annihilator' => 49111, 'Annihilator V2' => 8005, 'Dwarven Armor Quest' => 5053, 'Dwarven Legs Quest' => 5080, 'Helmet Of The Ancient' => 5125, 'Demon Helmet Quest' => 60746, 'Pits Of Inferno' => 10544, 'The Inquisition' => 8560, 'The Demon Oak' => 7201, 'Yalahar Quest' => 102504, 'Firewalker Boots Quest' => 102504, 'Demonic Svargrond Arena' => 585783, 'Arcane Amulet Quest' => 42391);
 				foreach($storage as $name => $value)
 				{
 					echo "<tr>";
@@ -909,7 +909,6 @@ if ($playerData['mana']['percent'] > 100) $playerData['mana']['percent'] = 100;
 		?>
 		<!-- END CHARACTER LIST -->
 		
-		<p class="address">Address: <a href="<?php echo ($config['htwrite']) ? "//" . $_SERVER['HTTP_HOST']."/" . $profile_data['name'] : "//" . $_SERVER['HTTP_HOST'] . "/characterprofile.php?name=" . $profile_data['name']; ?>"><?php echo ($config['htwrite']) ? $_SERVER['HTTP_HOST']."/". $profile_data['name'] : $_SERVER['HTTP_HOST']."/characterprofile.php?name=". $profile_data['name']; ?></a></p>
 		
 		<?php
 	} else {
